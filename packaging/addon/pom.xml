@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.exoplatform.addons.changePassword</groupId>
+    <artifactId>changePassword-packaging</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>changePassword-packaging-addon</artifactId>
+  <packaging>pom</packaging>
+  <name>Change Password - Addon Packaging</name>
+  <description>Change Password - Addon Packaging</description>
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>changePassword-extension-war</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+      <scope>provided</scope>
+    </dependency>	
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>changePassword-extension-config</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>changePassword-services</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>    
+  </dependencies>
+
+  <build>
+    <finalName>changePassword</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>package-addon</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <finalName>changePassword</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+              <descriptors>
+                <descriptor>src/main/assemblies/changePassword-addon.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
