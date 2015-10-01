@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.exoplatform.addons.changePassword</groupId>
     <artifactId>changePassword-packaging</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
   </parent>
   <artifactId>changePassword-packaging-addon</artifactId>
   <packaging>pom</packaging>
