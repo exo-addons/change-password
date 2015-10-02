@@ -21,11 +21,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.exoplatform.addons.changePassword</groupId>
-    <artifactId>changePassword-extension</artifactId>
+    <groupId>org.exoplatform.addons.change-password</groupId>
+    <artifactId>change-password-extension</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <artifactId>changePassword-extension-war</artifactId>
+  <artifactId>change-password-extension-war</artifactId>
   <packaging>war</packaging>
   <name>Change Password Extension war</name>
   <description>Change Password Extension Webapp</description>
@@ -43,6 +43,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>changePassword-extension</finalName>
+    <finalName>change-password-extension</finalName>
   </build>
 </project>

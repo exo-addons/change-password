@@ -30,7 +30,7 @@ import org.exoplatform.web.filter.Filter;
 
 public class ChangePasswordFilter implements Filter {
 	private static Log logger = ExoLogger.getLogger(ChangePasswordFilter.class);
-    private static final String CHANGE_PASSWORD_SERVLET_CTX = "/changePassword-extension";
+    private static final String CHANGE_PASSWORD_SERVLET_CTX = "/change-password-extension";
     private static final String CHANGE_PASSWORD_SERVLET_URL = "/changePasswordView";
     private static final String INITIAL_URI_PARAM_NAME = "initialURI";
     private static final String REST_URI = ExoContainerContext.getCurrentContainer().getContext().getRestContextName();

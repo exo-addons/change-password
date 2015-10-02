@@ -2,11 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.exoplatform.addons.changePassword</groupId>
-    <artifactId>changePassword-packaging</artifactId>
+    <groupId>org.exoplatform.addons.change-password</groupId>
+    <artifactId>change-password-packaging</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <artifactId>changePassword-packaging-tomcat-bundle</artifactId>
+  <artifactId>change-password-packaging-tomcat-bundle</artifactId>
   <packaging>pom</packaging>
   <name>Change Password - Tomcat Bundle Packaging</name>
   <description>Change Password - Tomcat Bundle Packaging</description>
@@ -32,20 +32,20 @@
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>changePassword-extension-war</artifactId>
+      <artifactId>change-password-extension-war</artifactId>
       <version>${project.version}</version>
       <type>war</type>
       <scope>provided</scope>
     </dependency>    
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>changePassword-extension-config</artifactId>
+      <artifactId>change-password-extension-config</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>changePassword-services</artifactId>
+      <artifactId>change-password-services</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
@@ -55,7 +55,7 @@
 	<profile>
       <id>tomcat</id>
       <build>
-		<finalName>changePassword-platform-${project.version}</finalName>  
+		<finalName>change-password-platform-${project.version}</finalName>  
         <plugins>
           <plugin>
             <artifactId>maven-assembly-plugin</artifactId>
@@ -71,7 +71,7 @@
                   <appendAssemblyId>false</appendAssemblyId>
                   <updateOnly>false</updateOnly>
                   <descriptors>
-                    <descriptor>src/main/assemblies/changePassword-tomcat-bundle.xml</descriptor>
+                    <descriptor>src/main/assemblies/change-password-tomcat-bundle.xml</descriptor>
                   </descriptors>
                 </configuration>
               </execution>

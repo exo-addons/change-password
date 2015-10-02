@@ -26,8 +26,8 @@
     <version>5</version>
     <relativePath />
   </parent>
-  <groupId>org.exoplatform.addons.changePassword</groupId>
-  <artifactId>changePassword-extension</artifactId>
+  <groupId>org.exoplatform.addons.change-password</groupId>
+  <artifactId>change-password-extension</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>Change Password Extension</name>
   <packaging>pom</packaging>
