@@ -23,7 +23,7 @@
   <parent>
     <artifactId>addons-parent-pom</artifactId>
     <groupId>org.exoplatform.addons</groupId>
-    <version>5</version>
+    <version>6</version>
     <relativePath />
   </parent>
   <groupId>org.exoplatform.addons.change-password</groupId>
