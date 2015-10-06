@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.exoplatform.addons.change-password</groupId>
     <artifactId>change-password-packaging</artifactId>
+    <groupId>org.exoplatform.addons.change-password</groupId>
     <version>1.0.x-SNAPSHOT</version>
   </parent>
   <artifactId>change-password-packaging-addon</artifactId>
@@ -16,7 +17,7 @@
       <version>${project.version}</version>
       <type>war</type>
       <scope>provided</scope>
-    </dependency>	
+    </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>change-password-extension-config</artifactId>
@@ -28,9 +29,8 @@
       <artifactId>change-password-services</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
-    </dependency>    
+    </dependency>
   </dependencies>
-
   <build>
     <finalName>change-password</finalName>
     <plugins>
@@ -56,5 +56,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>
