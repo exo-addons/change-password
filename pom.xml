@@ -28,7 +28,7 @@
   </parent>
   <groupId>org.exoplatform.addons.change-password</groupId>
   <artifactId>change-password-extension</artifactId>
-  <version>1.0.x-SNAPSHOT</version>
+  <version>1.0.x</version>
   <packaging>pom</packaging>
   <name>Change Password Extension</name>
   <description>Change Password Extension</description>
@@ -41,7 +41,7 @@
   <scm>
     <connection>scm:git:git://github.com/exo-addons/change-password.git</connection>
     <developerConnection>scm:git:git@github.com:exo-addons/change-password.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>change-password-extension-1.0.x</tag>
     <url>https://github.com/exo-addons/change-password.git</url>
   </scm>
   <properties>

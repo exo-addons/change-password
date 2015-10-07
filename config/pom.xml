@@ -23,7 +23,7 @@
   <parent>
     <artifactId>change-password-extension</artifactId>
     <groupId>org.exoplatform.addons.change-password</groupId>
-    <version>1.0.x-SNAPSHOT</version>
+    <version>1.0.x</version>
   </parent>
   <artifactId>change-password-extension-config</artifactId>
   <packaging>jar</packaging>
