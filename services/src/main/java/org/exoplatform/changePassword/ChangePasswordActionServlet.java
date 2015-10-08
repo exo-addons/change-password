@@ -40,7 +40,11 @@ public class ChangePasswordActionServlet extends HttpServlet {
             if (!newPassword.equals(reNewPassword)) {
                 httpServletRequest.setAttribute("notValidNewPassword", "true");
                 getServletContext().getRequestDispatcher(CHANGE_PASSWORD_JSP_RESOURCE).include(httpServletRequest, httpServletResponse);
-            } 
+            }
+            else if (newPassword.length() < 6 || newPassword.length() > 30) {
+                httpServletRequest.setAttribute("notCorrectNewPassword", "true");
+                getServletContext().getRequestDispatcher(CHANGE_PASSWORD_JSP_RESOURCE).include(httpServletRequest, httpServletResponse);
+            }
             else {
                 UserProfileHandler userProfileHandler = organizationService.getUserProfileHandler();
                 UserProfile userProfile = userProfileHandler.findUserProfileByName(userId);

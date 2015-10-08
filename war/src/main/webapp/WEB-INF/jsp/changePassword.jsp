@@ -12,8 +12,10 @@
   String newPassword = resourceBundle.getString("changePassword.newPassword");
   String reNewPassword = resourceBundle.getString("changePassword.reNewPassword");
   String send = resourceBundle.getString("changePassword.send");
-  String newPasswordError  = resourceBundle.getString("changePassword.newPasswordError");
+  String notValidNewPasswordError  = resourceBundle.getString("changePassword.notValidNewPasswordError");
+  String notCorrectNewPasswordError  = resourceBundle.getString("changePassword.notCorrectNewPasswordError");
   String notValidNewPassword = (String) request.getAttribute("notValidNewPassword");
+  String notCorrectNewPassword = (String) request.getAttribute("notCorrectNewPassword");
   response.setCharacterEncoding("UTF-8"); 
   response.setContentType("text/html; charset=UTF-8");
 %>
@@ -36,9 +38,14 @@
 				        <%
 				                if(notValidNewPassword == "true") {
 				        %>
-                            		<div class="new-password-error"><i class="change-password-icon-error"></i><%=newPasswordError%></div>
+                            		<div class="new-password-error"><i class="change-password-icon-error"></i><%=notValidNewPasswordError%></div>
                         <%
 				                }
+								else if(notCorrectNewPassword == "true") {
+						%>
+								<div class="new-password-error"><i class="change-password-icon-error"></i><%=notCorrectNewPasswordError%></div>
+						<%
+								}
                         %> 
                     </div>
                     <div class="center-change-password-content">
